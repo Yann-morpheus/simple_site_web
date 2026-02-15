@@ -1,12 +1,10 @@
-import { BiArrowToLeft, BiSolidArrowToTop, BiSolidMapPin } from "react-icons/bi";
-import { BsArrowsAngleExpand, BsArrowUpCircle, BsMap, BsWhatsapp } from "react-icons/bs";
-import { FaArrowRotateLeft, FaLocationPin } from "react-icons/fa6";
+import {  BsArrowUpCircle, BsWhatsapp } from "react-icons/bs";
 import Card from "./components/Card";
 import { useState } from "react";
 import { RiRestaurant2Fill } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
 import { MdMenuOpen } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLocationArrow } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const App = () => {
 
