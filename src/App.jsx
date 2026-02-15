@@ -18,7 +18,7 @@ const App = () => {
       <div className="w-full  bg-white border-b shadow-xs h-[70px] p-5 border-neutral-200 rounded-b-sm flex items-center justify-between max-md:p-0 fixed z-50 bg-white">
         <div className="flex gap-2 max-md:pl-2">
           <RiRestaurant2Fill className="text-orange-400 size-8 max-md:size-7" />
-          <h1 className="text-2xl font-semibold max-md:text-xl font-pacifico ">Délices de ma'a thé</h1>
+          <h1 className="text-2xl font-semibold max-md:text-xl font-pacifico ">Délices de ma'a Thé</h1>
         </div>
         {/* bouton whatsapp flottant */}
         <div className="fixed z-50 bg-white rounded-full size-14 flex items-center justify-center shadow-sm border border-neutral-200 bottom-5 right-5 p-2"><a href="https://wa.me/237699246889?text=salut%20je%20souhaite%20avoir%20un%20devis"><BsWhatsapp className="text-green-500 size-10" /></a> </div>
@@ -51,32 +51,32 @@ const App = () => {
 
         </div>
         <section className="absolute mt-10 flex flex-col  justify-center mx-2 h-full  z-20 inset-0 p-5 max-md:p-2" id="acceuill">
-          <h1 className="text-white font-semibold text-5xl max-md:text-3xl font-pacifico">Les délices de ma'a thé</h1>
-          <h2 className=" text-white font-light text-2xl max-md:text-xl mt-2 text-justify">Là où la patience transforme chaque ingrédients <br className="max-md:hidden"/> en un moment de plaisir et   d'exception </h2>
+          <h1 className="text-white font-semibold text-5xl max-md:text-3xl font-pacifico">Les délices de ma'a Thé</h1>
+          <h2 className=" text-white font-light text-2xl max-md:text-xl mt-2 text-justify">Là où la patience transforme chaque ingrédient <br className="max-md:hidden"/> en un moment de plaisir et   d'exception </h2>
           <div className="flex gap-5 mt-5">
             <button className="bg-white text-orange-500  rounded-xl hover:bg-orange-200 p-2   max-w-[150px] mt-2 cursor-pointer flex gap-2 items-center ">En Savoir plus <span><BsArrowUpCircle className="rotate-45 animate-bounce" /></span></button>
-            <button className="bg-black text-white  rounded-xl hover:bg-orange-200 p-2  max-w-[150px] mt-2 cursor-pointer flex gap-2 items-center ">Contacter nous</button>
+            <button className="bg-black text-white  rounded-xl hover:bg-orange-200 p-2  max-w-[150px] mt-2 cursor-pointer flex gap-2 items-center ">Contactez-nous</button>
           </div>
         </section>
         <section className="flex flex-col mt-8 items-center p-3 " id="service">
           <h1 className="text-4xl  text-center mb-5 border-b-2 pb-1 "><span className="text-orange-500 font-pacifico">Nos</span> services</h1>
           <div className="flex flex-wrap mt-2 items-center justify-center max-md:gap-5  gap-10">
-            <Card className={''} title={'Service traiteur'} link={'/service.jpg'} btnText={'Reservation'} />
-            <Card className={'max-md:flex-row-reverse'} title={'Livraison de repas'} link={'/Livraison.jpg'} btnText={'Commander'} />
-            <Card className={''} title={'Restaurant'} link={'/tchops.jpg'} btnText={'Reservation'} />
+            <Card linkBtn={'https://wa.me/237699246889?text=salut%20puis-je%20avoir%20une%20réservation%20pour%20un%20évènement'} className={''} title={'Service traiteur'} link={'/service.jpg'} btnText={'Reservation'} />
+            <Card linkBtn={'https://wa.me/237699246889?text=salut%20je%20souhaite%20me%20faire%20livré%20un%20repas'} className={'max-md:flex-row-reverse'} title={'Livraison de repas'} link={'/Livraison.jpg'} btnText={'Commander'} />
+            <Card linkBtn={'https://wa.me/237699246889?text=salut%20je%20souhaite%20avoir%20une%20reservation%20'} className={''} title={'Restaurant'} link={'/tchops.jpg'} btnText={'Reservation'} />
           </div>
         </section>
         <section className="mt-10 flex flex-col p-2 items-center justify-center  " id="galerie">
           <h1 className="text-4xl  text-center mb-5 border-b-2 pb-1  font-pacifico">Galerie</h1>
-          <div className="flex flex-row flex-wrap gap-2">
-            <img src="/koki.jpg" className="w-[180px] h-[180px] rounded-lg object-cover " />
-            <img src="/ndole.jpg" className="w-[180px] h-[180px] rounded-lg object-cover " />
-            <img src="/okok.jpg" className="w-[180px] h-[180px] rounded-lg object-cover  " />
-            <img src="/poulet.jpg" className="w-[180px] h-[180px] rounded-lg object-cover  " />
+          <div className="flex flex-row flex-wrap justify-around gap-y-4">
+            <img src="/koki.jpg" className="w-[180px] h-[180px] max-md:max-w-[150px] max-md:max-h-[150px] rounded-lg object-cover " />
+            <img src="/ndole.jpg" className="w-[180px] h-[180px] max-md:max-w-[150px] max-md:max-h-[150px] rounded-lg object-cover " />
+            <img src="/okok.jpg" className="w-[180px] h-[180px] max-md:max-w-[150px] max-md:max-h-[150px] rounded-lg object-cover  " />
+            <img src="/poulet.jpg" className="w-[180px] h-[180px] max-md:max-w-[150px] max-md:max-h-[150px] rounded-lg object-cover  " />
           </div>
         </section>
         <section className="mt-10 flex flex-col p-2 items-center bg-zinc-200" id="contact">
-          <h1 className="text-4xl  text-center mb-5 border-b-2 pb-1 mt-4 font-pacifico">Contacter Nous</h1>
+          <h1 className="text-4xl  text-center mb-5 border-b-2 pb-1 mt-4 font-pacifico">Contactez-Nous</h1>
           <div className="flex flex-row flex-wrap gap-2">
             <div className="w-full flex flex-col justify-center items-center">
               <h1 className="text-lg  font-bold">Localisation</h1>
